@@ -37,6 +37,18 @@ void loop() {
            motor2.setSpeed(-255);
            //delay(1000);
          }
+      else if(data == 'R')
+      {
+        motor.setSpeed(255);
+        motor2.setSpeed(-255);
+
+      }
+      else if(data == 'L')
+      {
+        motor.setSpeed(-255);
+        motor2.setSpeed(255);
+
+      }
       else
       {
         motor.setSpeed(0);
